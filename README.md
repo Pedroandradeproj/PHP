@@ -1,4 +1,4 @@
-### BackEnd-PHP
+# BackEnd-PHP
 
 Este repositório contém as atividades passadas pelo professor Enzo para a disciplina de Back-end utilizando PHP.
 
@@ -7,10 +7,10 @@ As atividades estão organizadas na pasta "Atividades", onde você pode encontra
 
 ## Introdução ao PHP
 
-# O que é PHP?
+## O que é PHP?
 PHP é uma linguagem de script de código aberto amplamente utilizada para o desenvolvimento de aplicativos web dinâmicos.
 
-# Por que usar PHP?
+## Por que usar PHP?
 
 Ampla adoção
 Facilidade de aprendizado
