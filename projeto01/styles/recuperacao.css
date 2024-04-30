@@ -1,0 +1,100 @@
+/* Coloque seu CSS personalizado aqui */
+:root {
+    --letra: black;
+    --fundo: white;
+}
+
+#cadastro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 45px;
+}
+
+.card {
+    background-color: #B3D9FF;
+    padding: 40px;
+    border-radius: 2px;
+    width: 380px;
+}
+
+.card-header {
+    text-align: center;
+    opacity: 0.8;
+    color: var(--letra);
+}
+
+.card-content label {
+    color: var(--letra);
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.card-content-area {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.card-content-area input {
+    margin-top: 10px;
+    padding: 0 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #e1e1e1;
+    outline: none;
+    color: var(--letra);
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-footer .submit {
+    width: 100%;
+    height: 40px;
+    background-color: mediumblue;
+    border: none;
+    color: white;
+    margin: 10px 0;
+}
+
+.card-footer a {
+    text-align: center;
+    font-size: 12px;
+    opacity: 0.8;
+    color: var(--letra);
+    text-decoration: none;
+}
+
+#cadastro {
+    background-color: var(--fundo);
+}
+
+/* Estilo para mensagens de erro */
+.error-message {
+    color: #ff6f61; /* Vermelho */
+}
+
+.success-message {
+    color: #5cb85c; /* Verde */
+}
+
+#enviarBtn {
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    background-color: #4CAF50; /* Verde suave */
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#enviarBtn:hover {
+    background-color: #45a049; /* Tom mais escuro do verde suave ao passar o mouse */
+}

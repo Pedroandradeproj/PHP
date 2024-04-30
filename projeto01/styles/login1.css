@@ -1,0 +1,134 @@
+:root {
+    --letra: #333; /* Cor do texto */
+    --fundo: #f9f9f9; /* Cor de fundo */
+    --destaque: #007bff;
+}
+  
+
+#login {
+    background-color: var(--fundo);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 100vh;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.card {
+    background-color: #fff; /* Fundo branco */
+    padding: 40px;
+    border-radius: 4px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+
+}
+
+.card-header {
+
+    padding-bottom: 50px;
+
+    opacity: 0.8;
+
+    color: var(--letra);
+
+}
+
+
+
+.card-content label {
+
+    color: var(--letra);
+
+    font-size: 12px;
+
+    opacity: 0.8;
+
+}
+
+.card-content-area {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    position: relative;
+}
+
+.password-input-container {
+    position: relative;
+}
+
+.card-content-area input {
+    margin-top: 10px;
+    padding: 0 30px 0 5px; /* Ajuste conforme necessário para acomodar o ícone */
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc; /* Cinza claro para a borda */
+    outline: none;
+    color: var(--letra);
+    width: calc(100% - 35px); /* Ajuste para compensar a largura do ícone e seu espaçamento */
+}
+
+.password-toggle {
+    position: absolute;
+    right: 5px;
+    top: 50%; /* Ajuste para centralizar verticalmente */
+    transform: translateY(-50%); /* Ajuste para centralizar verticalmente */
+    cursor: pointer;
+    color: var(--letra);
+    opacity: 0.8;
+}
+
+
+.card-footer {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.card-footer .submit {
+
+    width: 100%;
+
+    height: 40px;
+
+    background-color: var(--destaque);
+
+    border: none;
+
+    color: white;
+
+    margin: 10px 0;
+
+    border-radius: 4px;
+
+
+}
+
+.card-footer a {
+
+    text-align: center;
+
+    font-size: 12px;
+
+    opacity: 0.8;
+
+    color: var(--letra);
+
+    text-decoration: none;
+
+}
+
+#login {
+    background-color: var(--fundo);
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Define três colunas com largura igual */
+}

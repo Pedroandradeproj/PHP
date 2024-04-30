@@ -1,0 +1,424 @@
+@media only screen and (min-width: 700px) {
+    
+
+    /* *{
+        outline: 1px dashed red;
+    } */
+    :root {
+        --letra: black;
+        --fundo: white;
+    }
+
+    #cadastro {
+        
+        /* display: grid;
+        grid-template-areas: 'a b c'; */
+        /* align-items: center;
+        justify-content: center; */
+        height: auto;
+        /* padding-top: 2000px; */
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .card {
+        background-color: #B3D9FF;
+        padding: 40px;
+        border-radius: 2px;
+        width: 80vw;
+        margin: 20px;
+    }
+
+    .card-header {
+        
+        text-align: center;
+        opacity: 0.8;
+        color: var(--letra);
+    }
+
+    .card-content label {
+        color: var(--letra);
+        font-size: 12px;
+        opacity: 0.8;
+    }
+
+    .card-content-area {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+        
+    }
+
+    .card-content-area input {
+        margin-top: 10px;
+        padding: 0 5px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #e1e1e1;
+        outline: none;
+        color: var(--letra);
+    }
+
+    .card-content-area input[type="password"] {
+        /* Adicionando estilo para o campo de senha */
+        position: relative;
+    }
+
+    .card-content-area input[type="password"] .toggle-password {
+        /* Estilo para o ícone do olho no campo de senha */
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
+    .card-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-footer .submit {
+        width: 100%;
+        height: 40px;
+        background-color: mediumblue;
+        border: none;
+        color: white;
+        margin: 10px 0;
+    }
+
+    .card-footer a {
+        text-align: center;
+        font-size: 12px;
+        opacity: 0.8;
+        color: var(--letra);
+        text-decoration: none;
+    }
+
+    #cadastro {
+        background-color: var(--fundo);
+    }
+    /* ... (código anterior) ... */
+
+
+
+    /* ... (código posterior) ... */
+    .card-content-area .password-container {
+        /* Adicionando um estilo para a área do campo de senha */
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Estilo para mensagens de erro */
+    .error-message {
+        color: #ff6f61; /* Vermelho */
+    }
+
+
+    .success-message {
+        color: #5cb85c; /* Verde */
+    }
+
+    /* Exemplo de estilização do texto de placeholder */
+
+    #conta{
+        margin-top: 10px;
+        
+    }
+    #login{
+        display: flex;
+        text-align: center;
+        font-size: 16px;
+    }
+    /* Centraliza o texto "Cadastre-se" e "Já tem uma conta? Faça login" */
+    #login a {
+        font-size: 14px;
+        
+    }
+    /* Estilização do texto de placeholder */
+    ::placeholder {
+        color: var(--letra); /* Substitua pelo código da cor desejada */
+        opacity: 0.8; /* Ajuste a opacidade conforme necessário */
+    }
+    .card-content-area {
+        display: flex;
+        position: relative;
+    }
+
+    .card-content-area input[type="password"] {
+        /* Ajuste para o campo de senha e confirmação de senha */
+        flex: 1;
+    }
+
+    .card-content-area .toggle-password {
+        /* Ajuste para o ícone de visibilidade */
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: var(--letra); /* Cor do ícone - ajuste conforme necessário */
+        opacity: 0.8;
+    }
+
+    .card-content-area .toggle-password:hover {
+        /* Alterando a cor do ícone ao passar o mouse sobre o campo de senha e confirmação de senha */
+        color: var(--letra); /* Cor ao passar o mouse sobre o ícone - pode ser ajustada conforme necessário */
+    }
+    /* Ajustes para o botão "Criar Conta" */
+    #conta {
+        margin-top: 20px;
+        width: 100%;
+        height: 40px;
+        background-color: #4CAF50; /* Verde suave */
+        border: none;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    #conta:hover {
+        background-color: #45a049; /* Tom mais escuro do verde suave ao passar o mouse */
+    }
+
+    /* Ajustes para as opções de sexo */
+    .card-content-area select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 8px;
+    }
+
+    /* Você também pode ajustar outros estilos conforme necessário para as opções de sexo */
+    .card-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Define três colunas com largura igual */
+        grid-template-areas: 
+            'nome email rg'
+            'cargo cargo sexo' /* Agora o campo "cargo" ocupa dois espaços */
+            'cpf cep cidade'
+            'estado logradouro numero'
+            'complemento telefone telefone2'
+            'senhadiv senhadiv senhadiv'
+            'botaocc botaocc botaocc'
+            'botao1 botao1 botao1';
+        margin: auto;
+        padding: auto;
+    }
+    .senhadiv {
+        
+        display: grid;
+        grid-column: span 3; /* Ocupa as três colunas */
+        grid-template-columns: repeat(2, 1fr); /* Define três colunas com largura igual */
+        grid-template-areas: 
+            "senha senha2";
+    }
+    
+
+    .card-content-area:nth-child(4) {
+        grid-area: cargo; /* Ajusta explicitamente a área do campo "cargo" */
+    }
+    #login {
+        grid-area: botao1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+@media screen and (max-width:700px) {
+    
+    :root {
+        --letra: black;
+        --fundo: white;
+    }
+    
+    #cadastro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-top: 45px;
+    }
+    
+    .card {
+        background-color: #B3D9FF;
+        padding: 40px;
+        border-radius: 2px;
+        width: 280px;
+    }
+    
+    .card-header {
+        text-align: center;
+        opacity: 0.8;
+        color: var(--letra);
+    }
+    
+    .card-content label {
+        color: var(--letra);
+        font-size: 12px;
+        opacity: 0.8;
+    }
+    
+    .card-content-area {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    
+    .card-content-area input {
+        margin-top: 10px;
+        padding: 0 5px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #e1e1e1;
+        outline: none;
+        color: var(--letra);
+    }
+    
+    .card-content-area input[type="password"] {
+        /* Adicionando estilo para o campo de senha */
+        position: relative;
+    }
+    
+    .card-content-area input[type="password"] .toggle-password {
+        /* Estilo para o ícone do olho no campo de senha */
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+    
+    .card-footer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .card-footer .submit {
+        width: 100%;
+        height: 40px;
+        background-color: mediumblue;
+        border: none;
+        color: white;
+        margin: 10px 0;
+    }
+    
+    .card-footer a {
+        text-align: center;
+        font-size: 12px;
+        opacity: 0.8;
+        color: var(--letra);
+        text-decoration: none;
+    }
+    
+    #cadastro {
+        background-color: var(--fundo);
+    }
+    /* ... (código anterior) ... */
+    
+    
+    
+    /* ... (código posterior) ... */
+    .card-content-area .password-container {
+        /* Adicionando um estilo para a área do campo de senha */
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* Estilo para mensagens de erro */
+    .error-message {
+        color: #ff6f61; /* Vermelho */
+    }
+    
+    
+    .success-message {
+        color: #5cb85c; /* Verde */
+    }
+    
+    /* Exemplo de estilização do texto de placeholder */
+    
+    #conta{
+        margin-top: 10px;
+        
+    }
+    #login{
+        display: flex;
+        text-align: center;
+        font-size: 16px;
+    }
+    #login {
+        grid-area: botao1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* Centraliza o texto "Cadastre-se" e "Já tem uma conta? Faça login" */
+    #login a {
+        font-size: 14px;
+        
+    }
+    /* Estilização do texto de placeholder */
+    ::placeholder {
+        color: var(--letra); /* Substitua pelo código da cor desejada */
+        opacity: 0.8; /* Ajuste a opacidade conforme necessário */
+    }
+    .card-content-area {
+        display: flex;
+        position: relative;
+    }
+    
+    .card-content-area input[type="password"] {
+        /* Ajuste para o campo de senha e confirmação de senha */
+        flex: 1;
+    }
+    
+    .card-content-area .toggle-password {
+        /* Ajuste para o ícone de visibilidade */
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: var(--letra); /* Cor do ícone - ajuste conforme necessário */
+        opacity: 0.8;
+    }
+    
+    .card-content-area .toggle-password:hover {
+        /* Alterando a cor do ícone ao passar o mouse sobre o campo de senha e confirmação de senha */
+        color: var(--letra); /* Cor ao passar o mouse sobre o ícone - pode ser ajustada conforme necessário */
+    }
+    /* Ajustes para o botão "Criar Conta" */
+    #conta {
+        margin-top: 20px;
+        width: 100%;
+        height: 40px;
+        background-color: #4CAF50; /* Verde suave */
+        border: none;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    
+    #conta:hover {
+        background-color: #45a049; /* Tom mais escuro do verde suave ao passar o mouse */
+    }
+    
+    /* Ajustes para as opções de sexo */
+    .card-content-area select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 8px;
+    }
+    
+    /* Você também pode ajustar outros estilos conforme necessário para as opções de sexo */
+        
+    }
